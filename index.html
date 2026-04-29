@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="dashboard">
@@ -97,32 +97,94 @@
                 </div>
             </section>
 
-            <!-- Tech Stack Cell -->
-            <section class="bento-cell tech-stack-cell">
+            <!-- Enhanced Technical Stack Dashboard -->
+            <section class="bento-cell tech-stack-cell competence-dashboard">
                 <div class="cell-inner">
-                    <h3>Core Competencies</h3>
-                    <div class="tech-groups">
-                        <div class="tech-group">
-                            <div class="tech-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Pandas</span>
-                                <span class="tag">Scikit-learn</span>
+                    <h3>Skill Dashboard</h3>
+                    <div class="skill-groups">
+                        <!-- Group 1: Data Intelligence & Science -->
+                        <div class="skill-group" id="group-data">
+                            <div class="group-header">
+                                <span class="group-title">Data Intelligence & Science</span>
+                                <span class="context-tag">Predictive modeling, statistical validation, and automated EDA pipelines.</span>
+                            </div>
+                            <div class="skill-badges">
+                                <div class="skill-badge" title="Python (Advanced)">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M14.25.3a1.25 1.25 0 0 0-1.25 1.25v2.5h2.5V1.55A1.25 1.25 0 0 0 14.25.3zM14.25 21a1.25 1.25 0 0 0 1.25-1.25v-2.5h-2.5v2.5A1.25 1.25 0 0 0 14.25 21zM5.75 3h2.5V.55A1.25 1.25 0 0 0 7 .3 1.25 1.25 0 0 0 5.75 1.55V3zm0 18h2.5v-2.5h-2.5V21zM3 5.75v2.5H.55A1.25 1.25 0 0 0 .3 7 1.25 1.25 0 0 0 1.55 5.75H3zm18 0v2.5h2.5V7a1.25 1.25 0 0 0-1.25-1.25H21zM3 14.25v2.5H.55A1.25 1.25 0 0 0 .3 15.5 1.25 1.25 0 0 0 1.55 14.25H3zm18 0v2.5h2.5V15.5a1.25 1.25 0 0 0-1.25-1.25H21z"></path><path d="M12 21.5c1.1 0 2-.9 2-2V16c0-1.1-.9-2-2-2s-2 .9-2 2v3.5c0 1.1.9 2 2 2zM12 2.5c-1.1 0-2 .9-2 2V8c0 1.1.9 2 2 2s2-.9 2-2V4.5c0-1.1-.9-2-2-2zM21.5 12c0-1.1-.9-2-2-2H16c-1.1 0-2 .9-2 2s.9 2 2 2h3.5c1.1 0 2-.9 2-2zM2.5 12c0 1.1.9 2 2 2H8c1.1 0 2-.9 2-2s-.9-2-2-2H4.5c-1.1 0-2 .9-2 2z"></path></svg>
+                                    <span class="skill-name">Python</span>
+                                    <div class="proficiency-container">
+                                        <div class="proficiency-bar" style="width: 95%;"></div>
+                                        <span class="proficiency-text">5/5</span>
+                                    </div>
+                                </div>
+                                <div class="skill-badge">
+                                    <span class="skill-name">Pandas</span>
+                                    <div class="proficiency-container">
+                                        <div class="proficiency-bar" style="width: 90%;"></div>
+                                        <span class="proficiency-text">5/5</span>
+                                    </div>
+                                </div>
+                                <div class="skill-badge">
+                                    <span class="skill-name">NumPy</span>
+                                </div>
+                                <div class="skill-badge">
+                                    <span class="skill-name">Scikit-learn</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="tech-group">
-                            <div class="tech-tags">
-                                <span class="tag">Firebase</span>
-                                <span class="tag">SQL</span>
-                                <span class="tag">Docker</span>
+
+                        <!-- Group 2: Backend & Infrastructure -->
+                        <div class="skill-group" id="group-backend">
+                            <div class="group-header">
+                                <span class="group-title">Backend & Infrastructure</span>
+                                <span class="context-tag">Scalable architecture for clinical and commercial data systems.</span>
+                            </div>
+                            <div class="skill-badges">
+                                <div class="skill-badge">
+                                    <span class="skill-name">SQL</span>
+                                    <div class="proficiency-container">
+                                        <div class="proficiency-bar" style="width: 85%;"></div>
+                                        <span class="proficiency-text">4/5</span>
+                                    </div>
+                                </div>
+                                <div class="skill-badge">
+                                    <span class="skill-name">Firebase</span>
+                                </div>
+                                <div class="skill-badge">
+                                    <span class="skill-name">Google Cloud APIs</span>
+                                </div>
+                                <div class="skill-badge">
+                                    <span class="skill-name">Docker</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="tech-group">
-                            <div class="tech-tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">Tailwind</span>
-                                <span class="tag">JS</span>
+
+                        <!-- Group 3: Product Development -->
+                        <div class="skill-group" id="group-frontend">
+                            <div class="group-header">
+                                <span class="group-title">Product Development (Frontend)</span>
+                                <span class="context-tag">Responsive, data-driven interfaces and version control.</span>
+                            </div>
+                            <div class="skill-badges">
+                                <div class="skill-badge">
+                                    <span class="skill-name">JavaScript</span>
+                                </div>
+                                <div class="skill-badge">
+                                    <span class="skill-name">HTML5</span>
+                                </div>
+                                <div class="skill-badge">
+                                    <span class="skill-name">CSS3 (Tailwind)</span>
+                                </div>
+                                <div class="skill-badge">
+                                    <span class="skill-name">Git</span>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <!-- Scientific DNA Ribbon -->
+                    <div class="scientific-ribbon">
+                        <span class="ribbon-icon">🧪</span>
+                        <span class="ribbon-text">Hybrid Profile Advantage: Scientific rigor applied to data integrity and algorithm design.</span>
                     </div>
                 </div>
             </section>
